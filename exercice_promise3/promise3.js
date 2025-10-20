@@ -7,12 +7,11 @@ const firstPromise = new Promise((resolve) => {
 });
 
 console.log("Program in progress...");
-console.log(firstPromise); // pending
-
+console.log(firstPromise); 
 firstPromise
   .then((message) => {
     console.log(message);
-    // Return a second promise
+    
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve("Step 2 complete");
